@@ -40,6 +40,11 @@ nav {
     background-color: #1B2126;
 }
 
+section {
+    display: flex;
+    align-items: flex-start;
+}
+
 aside {
     flex: 1;
     background-color: #cccccc;
