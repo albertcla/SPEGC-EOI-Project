@@ -55,6 +55,7 @@ input::placeholder {
     font: normal 16px/1em 'Nunito Sans', sans-serif;
     color: #1b2126;
 }
+
 section {
     display: flex;
     align-items: flex-start;
@@ -62,22 +63,17 @@ section {
 
 aside {
     flex: 1;
-    background-color: #cccccc;
 }
 
-aside a,
-img {
+aside a , img {
     flex: 1;
 }
 
 main {
     flex: 3;
-    background-color: #dddddd;
 }
 
-
 /*Elementos*/
-
 #logo {
     display: inline-block;
     margin: 18px 0px;
