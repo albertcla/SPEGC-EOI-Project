@@ -21,13 +21,12 @@ ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    display: inline-block;
-    flex: 2;
 }
 
 li {
     display: inline;
     color: #b1b5b8;
+    padding: 0px 13px;
 }
 
 li a:hover {
@@ -40,18 +39,20 @@ nav {
     background-color: #1B2126;
 }
 
-nav.contenedor {
+nav .contenedor {
     justify-content: space-between;
 }
 
 input {
-    width: 370px;
+    width: 315px;
     height: 40px;
+    background-color: #5c6269;
     border-style: none;
     border-radius: 0px 8px 8px 0px;
 }
 
 input::placeholder {
+    font: normal 16px/1em 'Nunito Sans', sans-serif;
     color: #1b2126;
 }
 section {
@@ -83,8 +84,16 @@ main {
     flex: 1;
 }
 
-#lupa {
-    background-color: #ffffff;
+#search {
+    background-color: #5c6269;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    padding: 0px 8px;
+}
+
+#search img {
+    padding: 0px 12px 0px 5px;
 }
 
 .contenedor {
@@ -103,12 +112,6 @@ main {
 
 .btn:hover {
     color: #f3644f;
-}
-
-.search {
-    width: 870;
-    height: 38;
-    border: 2px;
 }
 
 .menu {
