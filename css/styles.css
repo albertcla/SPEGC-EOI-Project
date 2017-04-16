@@ -40,6 +40,20 @@ nav {
     background-color: #1B2126;
 }
 
+nav.contenedor {
+    justify-content: space-between;
+}
+
+input {
+    width: 370px;
+    height: 40px;
+    border-style: none;
+    border-radius: 0px 8px 8px 0px;
+}
+
+input::placeholder {
+    color: #1b2126;
+}
 section {
     display: flex;
     align-items: flex-start;
@@ -67,6 +81,10 @@ main {
     display: inline-block;
     margin: 18px 0px;
     flex: 1;
+}
+
+#lupa {
+    background-color: #ffffff;
 }
 
 .contenedor {
