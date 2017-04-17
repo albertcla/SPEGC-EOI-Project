@@ -12,9 +12,17 @@ body {
     margin: 0 auto;
 }
 
+h1 {
+    display: none;
+}
+
 a {
     text-decoration: none;
     color: inherit;
+}
+
+b {
+    height: 16px;
 }
 
 ul {
@@ -43,7 +51,7 @@ nav .contenedor {
     justify-content: space-between;
 }
 
-input {
+input[type=search] {
     width: 315px;
     height: 40px;
     background-color: #5c6269;
@@ -51,9 +59,35 @@ input {
     border-radius: 0px 8px 8px 0px;
 }
 
-input::placeholder {
+input[type=search]::placeholder {
     font: normal 16px/1em 'Nunito Sans', sans-serif;
     color: #1b2126;
+}
+
+input[type=range] {
+    -webkit-appearance: none;
+    width: 240px;
+    margin: 20px 0;
+}
+
+input[type=range]:focus {
+  outline: none;
+}
+
+input[type=range]::-webkit-slider-runnable-track {
+    height: 2px;
+    cursor: pointer;
+    background: #e9ecee;
+}
+
+input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    height: 22px;
+    width: 37px;
+    border-radius: 50px;
+    background: #2883d8;
+    cursor: pointer;
+    margin-top: -10px;
 }
 
 section {
@@ -67,6 +101,12 @@ aside {
 
 aside a , img {
     flex: 1;
+}
+
+aside div > div div {
+    display: flex;
+    justify-content: space-between;
+    
 }
 
 main {
@@ -99,7 +139,7 @@ main {
 
 .btn {
     width: 58px;
-    height: 36px;
+    height: 12px;
     display: inline-block;
     padding: 1em;
     text-align: center;
@@ -112,6 +152,22 @@ main {
 
 .menu {
     height: 69px;
+    line-height: 0.75;
 }
 
 .cartel {}
+
+.range {
+    color: #ebeef0;
+    font: bold 0.875em/1 'Nunito Sans', sans-serif;
+    border: 2px solid;
+    border-radius: 10px;
+    padding: 1px 10px;
+    margin-right: 50px;
+}
+
+.filter {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}

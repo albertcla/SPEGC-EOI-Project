@@ -27,19 +27,38 @@
             </div>
         </div>
     </nav>
+    <h1>PelisEOI - Las mejores películas</h1>
     <section class="wrapper">
         <aside>
             <div class="menu contenedor">
-                <img src="img/Filter_Icon.png" alt="Filter Icon">
+                <div><img src="img/Filter_Icon.png" alt="Filter Icon"></div>
                 <a href="#" class="btn">Filtrar</a>
                 <a href="#" class="btn">Borrar</a>
             </div>
             <div>
-                <img src="img/A%C3%B1o.png" alt="Range-year">
-                <img src="img/Valoraci%C3%B3n%20IMDB.png" alt="Validation">
-                <img src="img/Rotten%20Tomatoes%20-%20Critics%20Score.png" alt="CS">
-                <img src="img/Rotten%20Tomatoes%20-%20Audience%20Score.png" alt="AS">
-                <img src="img/G%C3%A9neros.png" alt="Generos">
+                <div class="filter">
+                    <b>Año</b>
+                    <p class="range">1900 - <span id="range-year"></span></p>
+                </div>
+                <input type="range" id="year" min="1900" max="2017" value="2000">
+                <div class="filter">
+                    <b>Valoración IMDB</b>
+                    <p class="range">0 - <span id="range-imdb"></span></p>
+                </div>
+                <input type="range" id="imdb" min="0" max="9" value="5">
+                <div class="filter">
+                    <b>Rotten Tomatoes - CS</b>
+                    <p class="range">0 - <span id="range-cs"></span></p>
+                </div>
+                <input type="range" id="cs" value="50">
+                <div class="filter">
+                    <b>Rotten Tomatoes - AS</b>
+                    <p class="range">0 - <span id="range-as"></span></p>
+                </div>
+                <input type="range" id="as" value="50">
+                <div>
+                    <img src="img/G%C3%A9neros.png" alt="Generos">
+                </div>
             </div>
         </aside>
         <main>
@@ -52,6 +71,7 @@
             </div>
         </main>
     </section>
+    <script type="text/javascript" src="js/range-value.js"></script>
 </body>
 
 </html>
