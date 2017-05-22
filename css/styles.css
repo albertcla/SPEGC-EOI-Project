@@ -1,73 +1,75 @@
 /*Etiquetas*/
 
 body {
-    padding: 0px;
-    margin: 0px;
-    font: normal 16px/1em 'Nunito Sans', sans-serif;
-    color: #5c6269;
+  padding: 0px;
+  margin: 0px;
+  font: normal 16px/1em 'Nunito Sans', sans-serif;
+  color: #5c6269;
 }
 
 .wrapper {
-    width: 1170px;
-    margin: 0 auto;
+  width: 1170px;
+  margin: 0 auto;
 }
 
 h1 {
-    display: none;
+  display: none;
 }
 
 a {
-    text-decoration: none;
-    color: inherit;
+  text-decoration: none;
+  color: inherit;
 }
 
 b {
-    height: 16px;
+  height: 16px;
 }
 
 ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
 li {
-    display: inline;
-    color: #b1b5b8;
-    padding: 0px 13px;
+  display: inline;
+  color: #b1b5b8;
+  padding: 0px 13px;
 }
 
 li a:hover {
-    color: #ffffff;
+  color: #ffffff;
 }
 
 nav {
-    width: 100%;
-    height: 68px;
-    background-color: #1B2126;
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+  height: 68px;
+  background-color: #1B2126;
 }
 
 nav .contenedor {
-    justify-content: space-between;
+  justify-content: space-between;
 }
 
 input[type=search] {
-    width: 315px;
-    height: 40px;
-    background-color: #5c6269;
-    border-style: none;
-    border-radius: 0px 8px 8px 0px;
+  width: 315px;
+  height: 40px;
+  background-color: #5c6269;
+  border-style: none;
+  border-radius: 0px 8px 8px 0px;
 }
 
 input[type=search]::placeholder {
-    font: normal 16px/1em 'Nunito Sans', sans-serif;
-    color: #1b2126;
+  font: normal 16px/1em 'Nunito Sans', sans-serif;
+  color: #1b2126;
 }
 
 input[type=range] {
-    -webkit-appearance: none;
-    width: 240px;
-    margin: 20px 0;
+  -webkit-appearance: none;
+  width: 240px;
+  margin: 20px 0;
 }
 
 input[type=range]:focus {
@@ -75,99 +77,92 @@ input[type=range]:focus {
 }
 
 input[type=range]::-webkit-slider-runnable-track {
-    height: 2px;
-    cursor: pointer;
-    background: #e9ecee;
+  height: 2px;
+  cursor: pointer;
+  background: #e9ecee;
 }
 
 input[type=range]::-webkit-slider-thumb {
-    -webkit-appearance: none;
-    height: 22px;
-    width: 37px;
-    border-radius: 50px;
-    background: #2883d8;
-    cursor: pointer;
-    margin-top: -10px;
-}
-
-section {
-    display: flex;
-    align-items: flex-start;
+  -webkit-appearance: none;
+  height: 22px;
+  width: 37px;
+  border-radius: 50px;
+  background: #2883d8;
+  cursor: pointer;
+  margin-top: -10px;
 }
 
 aside {
-    flex: 1;
-}
-
-aside a , img {
-    flex: 1;
-}
-
-aside div > div div {
-    display: flex;
-    justify-content: space-between;
-    
+  position: fixed;
+  overflow: auto;
+  width: 25%;
+  top: 68px;
+  bottom: 0;
 }
 
 main {
-    flex: 3;
+  width: 75%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  right: 0;
 }
 
+
 /*Elementos*/
+
 #logo {
-    display: inline-block;
-    margin: 18px 0px;
-    flex: 1;
+  display: inline-block;
+  margin: 18px 0px;
+  flex: 1;
 }
 
 #search {
-    background-color: #5c6269;
-    border-radius: 8px;
-    display: flex;
-    align-items: center;
-    padding: 0px 8px;
+  background-color: #5c6269;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  padding: 0px 8px;
 }
 
 #search img {
-    padding: 0px 12px 0px 5px;
+  padding: 0px 12px 0px 5px;
 }
 
 .contenedor {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .btn {
-    width: 58px;
-    height: 12px;
-    display: inline-block;
-    padding: 1em;
-    text-align: center;
-    color: #5c6269;
+  width: 58px;
+  height: 12px;
+  display: inline-block;
+  padding: 1em;
+  text-align: center;
+  color: #5c6269;
 }
 
 .btn:hover {
-    color: #f3644f;
+  color: #f3644f;
 }
 
 .menu {
-    height: 69px;
-    line-height: 0.75;
+  height: 69px;
+  line-height: 0.75;
 }
 
-.cartel {}
-
 .range {
-    color: #ebeef0;
-    font: bold 0.875em/1 'Nunito Sans', sans-serif;
-    border: 2px solid;
-    border-radius: 10px;
-    padding: 1px 10px;
-    margin-right: 50px;
+  color: #ebeef0;
+  font: bold 0.875em/1 'Nunito Sans', sans-serif;
+  border: 2px solid;
+  border-radius: 10px;
+  padding: 1px 10px;
+  margin-right: 50px;
 }
 
 .filter {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
